@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <title>合成大西瓜</title>
+  <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1, minimum-scale=1,maximum-scale=1"/>
+
+  <!--https://developer.apple.com/library/safari/documentation/AppleApplications/Reference/SafariHTMLRef/Articles/MetaTags.html-->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="format-detection" content="telephone=no">
+
+  <!-- force webkit on 360 -->
+  <meta name="renderer" content="webkit"/>
+  <meta name="force-rendering" content="webkit"/>
+
+  <!-- force edge on IE -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+  <meta name="msapplication-tap-highlight" content="no">
+
+  <!-- force full screen on some browser -->
+  <meta name="full-screen" content="yes"/>
+  <meta name="x5-fullscreen" content="true"/>
+  <meta name="360-fullscreen" content="true"/>
+
+  <!-- force screen orientation on some browser -->
+  <meta name="screen-orientation" content=""/>
+  <meta name="x5-orientation" content="">
+
+  <!--fix fireball/issues/3568 -->
+  <meta name="x5-page-mode" content="app">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/yuewuzhijian/make_big_watermelon/css/style-mobile.min.css"/>
+</head>
+
+<body style="margin: 0; background: #ddd;" align="center">
+  <div id="canvasDiv" style="width:100%;height:100%;">
+    <canvas id="GameCanvas" oncontextmenu="event.preventDefault()" tabindex="0"></canvas>
+    <div id="block-Box" style="display:block;width:100%;height:100%;"></div>
+  </div>
+
+  <div id="adContainer"
+       style="display:none;position: absolute;top:0px;left: 0px;width:100%;height:100%;z-index:999;"></div>
+  <div id="loadingText"
+       style="width:100%;display: none;text-align:center;position:absolute;top:45%;z-index:2;font-size:20px;color:#f99f0a">
+    loading......0%
+  </div>
+
+  <div id="splash"></div>
+
+  <div id="loadingImg" style="top:45%;width: 100%;position:absolute; ">
+    <img src="res/loading.gif" width="7%" height="7%"/>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/gh/yuewuzhijian/make_big_watermelon/js/settings.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/yuewuzhijian/make_big_watermelon/js/extraSettings.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/yuewuzhijian/make_big_watermelon/js/main.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/yuewuzhijian/make_big_watermelon/js/app.js"></script>
+</body>
+</html>
